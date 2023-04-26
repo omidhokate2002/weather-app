@@ -9,7 +9,7 @@ function Weather() {
 
   // function to get temp data
   const getTempData = async (api, query) => {
-    let url = process.env.REACT_APP_API_URL;
+    let url =`https://api.openweathermap.org/data/2.5/weather?q=${query}&units=metric&appid=${api}`;
     try {
       const response = await axios.get(url);
       setData(response.data.main);
