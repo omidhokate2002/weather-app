@@ -28,7 +28,7 @@ function Weather() {
 
   return (
     <div className="container">
-      <h1 className="text-center my-5">Weather App</h1>
+      <h1 className="text-center my-5">Omis Weather App</h1>
       <div className="row justify-content-center">
         <div className="col-md-6">
           <div className="input-group mb-3">
