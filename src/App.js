@@ -6,7 +6,6 @@ function Weather() {
   const [inputValue, setInputValue] = useState("");
   const [data, setData] = useState(null);
   const [city, setCity] = useState("");
-  const API_KEY = "2fce26b3009e0a66de8c0a0223800869";
 
   // function to get temp data
   const getTempData = async (api, query) => {
