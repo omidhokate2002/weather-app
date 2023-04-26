@@ -23,7 +23,8 @@ function Weather() {
 
   // handle button click
   const handleButtonClick = () => {
-    getTempData(API_KEY, inputValue);
+    getTempData(process.env.REACT_APP_API_KEY
+, inputValue);
   };
 
   return (
