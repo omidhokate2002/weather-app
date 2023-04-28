@@ -9,7 +9,8 @@ function Weather() {
 
   // function to get temp data
   const getTempData = async (api, query) => {
-    let url =`${process.env.REACT_APP_API_URL}?q=${query}&units=metric&appid=${api}`;
+    const url = `${process.env.REACT_APP_API_URL}?q=${query}&units=metric&appid=${api}`;
+const response = await axios.get(url);
     try {
       const response = await axios.get(url);
       setData(response.data.main);
